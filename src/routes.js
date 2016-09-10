@@ -7,7 +7,12 @@ module.exports = {
         component: require('./components/tab1')
       },
       "/tab1": {
-        component: require('./components/tab1')
+        component: require('./components/tab1'),
+        subRoutes: {
+          "/sub_sub_tab" : {
+            component: require('./components/sub_sub_tab')
+          }
+        }
       },
       "/tab2": {
         component: require('./components/tab2')

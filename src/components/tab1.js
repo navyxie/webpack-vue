@@ -1,3 +1,7 @@
+import sub_sub_tab from "./sub_sub_tab";
 module.exports = {
-  template: "<p>Tab1 content</p>"
+  template: require('../templates/tab1.html'),
+  components: {
+    "sub_sub_tab": sub_sub_tab
+  }
 }
